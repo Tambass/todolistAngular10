@@ -1,3 +1,6 @@
+// Ce service permet de percister les données
+// C'est ici que la connection à la BDD se fera
+
 import { Injectable } from '@angular/core';
 import { Technology } from '../models/Technology';
 
