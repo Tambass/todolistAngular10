@@ -4,9 +4,6 @@
 <!-- {{allTechnos | json}} -->
 
 <div *ngFor="let techno of allTechnos">
-    <h4>{{ techno.technoname }}</h4>
-    <div>
-        {{ techno.category }} - 
-        {{ techno.details }}
-    </div>
+    <!-- Pour passer un objet, on utilise les crachets -->
+    <app-techno-details [tech]="techno"></app-techno-details>
 </div>
