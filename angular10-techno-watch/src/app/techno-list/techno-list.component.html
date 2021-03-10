@@ -5,5 +5,5 @@
 
 <div *ngFor="let techno of allTechnos">
     <!-- Pour passer un objet, on utilise les crachets -->
-    <app-techno-details [tech]="techno"></app-techno-details>
+    <app-techno-details [tech]="techno" (deleteTech)="deleteTechno($event)"></app-techno-details>
 </div>
